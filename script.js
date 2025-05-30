@@ -8,7 +8,7 @@ document.getElementById('complaintForm').addEventListener('submit', function(e) 
     complaint: document.getElementById('complaint').value
   };
 
-  fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbwESocfd4nKcN-YqgjtS8jgEDFzIXSOttP22k6L07V-HRjweqHtHcBH5OAByoIVSNpquw/exec', {
     method: 'POST',
     body: JSON.stringify(data)
   })
