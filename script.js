@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function trackComplaint() {
   const complaintID = document.getElementById('trackID').value;
-  fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?action=trackStatus', {
+  fetch('https://script.google.com/macros/s/AKfycbwESocfd4nKcN-YqgjtS8jgEDFzIXSOttP22k6L07V-HRjweqHtHcBH5OAByoIVSNpquw/exec?action=trackStatus', {
     method: 'POST',
     body: JSON.stringify({ complaintID: complaintID })
   })
@@ -60,7 +60,7 @@ function updateStatus() {
     newStatus: document.getElementById('newStatus').value
   };
 
-  fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?action=updateStatus', {
+  fetch('https://script.google.com/macros/s/AKfycbwESocfd4nKcN-YqgjtS8jgEDFzIXSOttP22k6L07V-HRjweqHtHcBH5OAByoIVSNpquw/exec?action=updateStatus', {
     method: 'POST',
     body: JSON.stringify(data)
   })
