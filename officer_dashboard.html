@@ -8,23 +8,23 @@
 </head>
 <body>
   <header class="bsnl-header">
-    <img src="https://bsnl.co.in/opencms/bsnl/BSNL/about_us/logo/logo.jpg" alt="BSNL Logo" class="logo"/>
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/79/Bharat_Sanchar_Nigam_Limited_Logo.svg" alt="BSNL Logo" class="logo"/>
     <h1>Officer Complaint Dashboard</h1>
   </header>
-
   <main class="center-box form-layout">
     <h2>Login to View Assigned Complaints</h2>
-    <input type="text" id="officerMobile" placeholder="Enter your Mobile Number">
-    <input type="text" id="officerArea" placeholder="Enter your Area">
+    <input type="text" id="officerMobile" placeholder="Enter your Mobile Number" required>
+    <label for="officerArea">Select Area</label>
+    <select id="officerArea" required>
+      <option value="">Select Area</option>
+      <option value="Delta">Delta</option><option value="Sector 19">Sector 19</option><option value="Sector 62">Sector 62</option><option value="Noida HQ">Noida HQ</option><option value="Greater Noida">Greater Noida</option><option value="Ghaziabad">Ghaziabad</option>
+    </select>
     <button class="button" onclick="officerLogin()">Login</button>
-
     <div id="officerComplaints" style="margin-top: 20px;"></div>
   </main>
-
   <footer class="footer">
     <p>&copy; 2025 BSNL - Bharat Sanchar Nigam Limited</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

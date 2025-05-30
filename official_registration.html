@@ -8,18 +8,18 @@
 </head>
 <body>
   <header class="bsnl-header">
-    <img src="https://bsnl.co.in/opencms/bsnl/BSNL/about_us/logo/logo.jpg" alt="BSNL Logo" class="logo"/>
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/79/Bharat_Sanchar_Nigam_Limited_Logo.svg" alt="BSNL Logo" class="logo"/>
     <h1>Officer Registration</h1>
   </header>
-
   <main class="center-box form-layout">
     <form id="officerForm">
       <label for="officerName">Name</label>
       <input type="text" id="officerName" required>
-
       <label for="area">Area</label>
-      <input type="text" id="area" required>
-
+      <select id="area" required>
+        <option value="">Select Area</option>
+        <option value="Delta">Delta</option><option value="Sector 19">Sector 19</option><option value="Sector 62">Sector 62</option><option value="Noida HQ">Noida HQ</option><option value="Greater Noida">Greater Noida</option><option value="Ghaziabad">Ghaziabad</option>
+      </select>
       <label for="service">Service</label>
       <select id="service" required>
         <option value="">Select Service</option>
@@ -30,25 +30,22 @@
         <option value="EB Power">EB Power</option>
         <option value="NGN">NGN</option>
       </select>
-
       <label for="post">Post</label>
-      <input type="text" id="post" required>
-
+      <select id="post" required>
+        <option value="">Select Post</option>
+        <option value="SDO">SDO</option><option value="JTO">JTO</option><option value="JE">JE</option><option value="TTA">TTA</option><option value="Technician">Technician</option><option value="Manager">Manager</option><option value="Other">Other</option>
+      </select>
       <label for="mobile">Mobile Number</label>
       <input type="tel" id="mobile" required>
-
       <label for="email">Email</label>
       <input type="email" id="email" required>
-
       <button type="submit" class="button">Register Officer</button>
     </form>
     <div id="officerResponse" class="response-message"></div>
   </main>
-
   <footer class="footer">
     <p>&copy; 2025 BSNL - Bharat Sanchar Nigam Limited</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
