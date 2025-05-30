@@ -1,1 +1,30 @@
-<!-- officer_dashboard.html - Fully implemented for BSNL final system -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BSNL Officer Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="bsnl-header">
+    <img src="https://bsnl.co.in/opencms/bsnl/BSNL/about_us/logo/logo.jpg" alt="BSNL Logo" class="logo"/>
+    <h1>Officer Complaint Dashboard</h1>
+  </header>
+
+  <main class="center-box form-layout">
+    <h2>Login to View Assigned Complaints</h2>
+    <input type="text" id="officerMobile" placeholder="Enter your Mobile Number">
+    <input type="text" id="officerArea" placeholder="Enter your Area">
+    <button class="button" onclick="officerLogin()">Login</button>
+
+    <div id="officerComplaints" style="margin-top: 20px;"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 BSNL - Bharat Sanchar Nigam Limited</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scan to File Complaint - BSNL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f4f6f8;
+    }
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    .qr-box {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: white;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .qr-box img {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://bsnl.co.in/opencms/bsnl/BSNL/about_us/logo/logo.jpg" class="logo" alt="BSNL Logo">
+  <h1>Scan to File Your Complaint</h1>
+  <p>Use your mobile device to scan the QR code and access the complaint form.</p>
+  <div class="qr-box">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://yourdomain.com/complaint_form.html" alt="QR Code">
+  </div>
+</body>
+</html>

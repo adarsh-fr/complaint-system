@@ -1,1 +1,28 @@
-<!-- track_complaint.html - Fully implemented for BSNL final system -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Track Complaint - BSNL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="bsnl-header">
+    <img src="https://bsnl.co.in/opencms/bsnl/BSNL/about_us/logo/logo.jpg" alt="BSNL Logo" class="logo"/>
+    <h1>Track Your Complaint</h1>
+  </header>
+
+  <main class="center-box">
+    <h2>Enter Complaint ID</h2>
+    <input type="text" id="trackID" placeholder="Complaint ID" required>
+    <button class="button" onclick="trackComplaint()">Track</button>
+    <div id="statusResult" class="response-message" style="margin-top: 20px;"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 BSNL - Bharat Sanchar Nigam Limited</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

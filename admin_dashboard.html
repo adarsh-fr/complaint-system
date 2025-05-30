@@ -1,1 +1,42 @@
-<!-- admin_dashboard.html - Fully implemented for BSNL final system -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - BSNL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="bsnl-header">
+    <img src="https://bsnl.co.in/opencms/bsnl/BSNL/about_us/logo/logo.jpg" alt="BSNL Logo" class="logo"/>
+    <h1>Admin Dashboard</h1>
+  </header>
+
+  <main class="center-box form-layout">
+    <div id="adminLogin">
+      <h2>Admin Login</h2>
+      <input type="password" id="adminPass" placeholder="Enter Admin Password">
+      <button class="button" onclick="adminLogin()">Login</button>
+    </div>
+
+    <div id="adminPanel" style="display:none;">
+      <h2>Update Complaint Status</h2>
+      <input type="text" id="adminComplaintID" placeholder="Complaint ID" required>
+      <select id="newStatus">
+        <option value="">Select New Status</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Resolved">Resolved</option>
+      </select>
+      <button class="button" onclick="updateStatus()">Update</button>
+      <div id="adminResponse" class="response-message" style="margin-top: 20px;"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 BSNL - Bharat Sanchar Nigam Limited</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

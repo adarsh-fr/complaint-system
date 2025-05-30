@@ -1,1 +1,54 @@
-<!-- official_registration.html - Fully implemented for BSNL final system -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BSNL Officer Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="bsnl-header">
+    <img src="https://bsnl.co.in/opencms/bsnl/BSNL/about_us/logo/logo.jpg" alt="BSNL Logo" class="logo"/>
+    <h1>Officer Registration</h1>
+  </header>
+
+  <main class="center-box form-layout">
+    <form id="officerForm">
+      <label for="officerName">Name</label>
+      <input type="text" id="officerName" required>
+
+      <label for="area">Area</label>
+      <input type="text" id="area" required>
+
+      <label for="service">Service</label>
+      <select id="service" required>
+        <option value="">Select Service</option>
+        <option value="Landline">Landline</option>
+        <option value="Broadband">Broadband</option>
+        <option value="Mobile">Mobile</option>
+        <option value="FTTH">FTTH</option>
+        <option value="EB Power">EB Power</option>
+        <option value="NGN">NGN</option>
+      </select>
+
+      <label for="post">Post</label>
+      <input type="text" id="post" required>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <button type="submit" class="button">Register Officer</button>
+    </form>
+    <div id="officerResponse" class="response-message"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 BSNL - Bharat Sanchar Nigam Limited</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

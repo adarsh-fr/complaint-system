@@ -1,1 +1,82 @@
-<!-- style.css - Fully implemented for BSNL final system -->
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+.bsnl-header {
+  background-color: #002d72;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.bsnl-header .logo {
+  height: 60px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.bsnl-header h1 {
+  margin: 0;
+  padding-left: 80px;
+  font-size: 1.6rem;
+}
+.center-box {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+.button {
+  padding: 12px 20px;
+  background-color: #0061b0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #003e7e;
+}
+.footer {
+  background-color: #002d72;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.form-layout form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+.form-layout input, .form-layout select, .form-layout textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.form-layout label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.response-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}

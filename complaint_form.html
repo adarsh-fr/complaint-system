@@ -1,1 +1,58 @@
-<!-- complaint_form.html - Fully implemented for BSNL final system -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSNL - File a Complaint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bsnl-header">
+    <img src="https://bsnl.co.in/opencms/bsnl/BSNL/about_us/logo/logo.jpg" alt="BSNL Logo" class="logo" />
+    <h1>BSNL Complaint Form</h1>
+  </header>
+
+  <main class="center-box form-layout">
+    <h2>Submit Your Complaint</h2>
+    <form id="complaintForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required placeholder="Enter your full name">
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" required placeholder="10-digit mobile number">
+
+      <label for="area">Select Area</label>
+      <select id="area" required>
+        <option value="">-- Choose Area --</option>
+        <option value="Delta">Delta</option>
+        <option value="Sector 19">Sector 19</option>
+        <option value="Sector 62">Sector 62</option>
+      </select>
+
+      <label for="service">Type of Service</label>
+      <select id="service" required>
+        <option value="">-- Choose Service --</option>
+        <option value="Landline">Landline</option>
+        <option value="Broadband">Broadband</option>
+        <option value="Mobile">Mobile</option>
+        <option value="FTTH">FTTH</option>
+        <option value="EB Power">EB Power</option>
+        <option value="NGN">NGN</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="complaint">Complaint Details</label>
+      <textarea id="complaint" rows="5" required placeholder="Describe your issue here..."></textarea>
+
+      <button type="submit" class="button">Submit Complaint</button>
+    </form>
+    <div id="response" class="response-message"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 BSNL - Bharat Sanchar Nigam Limited</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
