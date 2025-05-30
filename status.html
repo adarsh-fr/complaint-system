@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Track Complaint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Track Your Complaint</h2>
+    <input type="text" id="trackID" placeholder="Enter Complaint ID">
+    <button onclick="trackComplaint()">Check Status</button>
+    <div id="statusResult"></div>
+  </div>
+  <script>
+    function trackComplaint() {
+      const id = document.getElementById('trackID').value;
+      document.getElementById('statusResult').innerText = `Status for ID ${id}: Pending (sample)`;
+    }
+  </script>
+</body>
+</html>

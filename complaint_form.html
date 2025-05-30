@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File a Complaint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Complaint Form</h2>
+    <form id="complaintForm">
+      <input type="text" id="name" placeholder="Your Name" required><br>
+      <input type="tel" id="mobile" placeholder="Mobile Number" required><br>
+      <select id="area" required>
+        <option value="">Select Area</option>
+        <option value="Delta">Delta</option>
+        <option value="Sector 19">Sector 19</option>
+        <option value="Sector 62">Sector 62</option>
+      </select><br>
+      <select id="service" required>
+        <option value="">Select Service</option>
+        <option value="Landline">Landline</option>
+        <option value="Broadband">Broadband</option>
+        <option value="Mobile">Mobile</option>
+        <option value="FTTH">FTTH</option>
+        <option value="EB Power">EB Power</option>
+        <option value="NGN">NGN</option>
+        <option value="Other">Other</option>
+      </select><br>
+      <textarea id="complaint" placeholder="Describe your complaint" required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
